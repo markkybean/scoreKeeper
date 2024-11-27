@@ -5,58 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Keeper</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-
-
 </head>
 <body>
-
    <section class="section">
     <div class="container">
-        <div class="columns">
-            <div class="column is-half is-offset-one-quarter">
+        <div class="columns is-mobile is-centered">
+            <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
                 <div class="card">
                     <div class="card-image">
-                        <figure class="image is-2by1">
-                            <img src="https://plus.unsplash.com/premium_photo-1664304895381-e1231b4fd8e5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <figure class="image is-2by1 is-fullwidth">
+                            <img src="https://plus.unsplash.com/premium_photo-1664304895381-e1231b4fd8e5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Score Keeper">
                         </figure>
                     </div>
                     <header class="card-header">
-                      <p class="card-header-title">Score Keeper</p>                   
+                      <p class="card-header-title is-size-5-mobile is-size-4-tablet is-size-3-desktop">Score Keeper</p>                   
                     </header>
                     <div class="card-content">
-                      <div class="content">
-                        <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
-                        <p class="subtitle">Use the buttons below to keep score</p>
-
-                        <label for="playto" class="label is-large is-inline"> Playing to</label>
-                        <div class="select rounded">
-                            <select name="" id="playto">
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                            </select>
+                      <div class="content has-text-centered">
+                        <h1 class="title is-size-3-mobile is-size-2-tablet is-size-1-desktop">
+                            <span id="p1Display">0</span> to <span id="p2Display">0</span>
+                        </h1>
+                        <p class="subtitle is-size-6-mobile is-size-5-tablet">Use the buttons below to keep score</p>
+                        <div class="field has-addons is-justify-content-center">
+                            <label for="playto" class="label is-size-6-mobile is-size-5-tablet mr-2">Playing to:</label>
+                            <div class="control">
+                                <div class="select is-rounded">
+                                    <select id="playto">
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                       </div>
                     </div>
-                    <footer class="card-footer">
-                        <button id="p1Button" class="is-primary button card-footer-item">+1 Player 1</button>
-                        <button id="p2Button" class="is-info button card-footer-item">+1 Player 2</button>
-                        <button id="reset" class="is-danger button card-footer-item">Reset</button>
+                    <footer class="card-footer is-flex-wrap-wrap">
+                        <button id="p1Button" class="button is-primary card-footer-item is-fullwidth-mobile m-1">+1 Player 1</button>
+                        <button id="p2Button" class="button is-info card-footer-item is-fullwidth-mobile m-1">+1 Player 2</button>
+                        <button id="reset" class="button is-danger card-footer-item is-fullwidth-mobile m-1">Reset</button>
                     </footer>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
    </section>
-
-
-
 
     <script src="app.js"></script>
 </body>
